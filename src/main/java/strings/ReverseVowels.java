@@ -43,6 +43,32 @@ public class ReverseVowels {
         return new String(chars);
     }
 
+   /* private static final String VOWELS = "aeiouAEIOU";
+
+    public String reverseVowels(String s) {
+        char[] arr = s.toCharArray();
+        int left = 0, right = arr.length - 1;
+
+        while (left < right) {
+
+            if (VOWELS.indexOf(arr[left]) == -1) {          // left is not vowel
+                left++;
+            }
+            else if (VOWELS.indexOf(arr[right]) == -1) {    // right is not vowel
+                right--;
+            }
+            else {                                          // both are vowels → swap
+                char temp = arr[left];
+                arr[left] = arr[right];
+                arr[right] = temp;
+                left++;
+                right--;
+            }
+
+        }
+
+        return new String(arr);*/
+
     public static void main(String[] args) {
         ReverseVowels rv = new ReverseVowels();
         System.out.println(rv.reverseVowels("IceCreAm"));
